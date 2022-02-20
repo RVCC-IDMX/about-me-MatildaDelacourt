@@ -1,0 +1,26 @@
+body {
+    font-family:DM SANS;
+    background-color:#EDE8F9;
+    color:#C95E40;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family:"Roboto Serif";
+    font-size:30pt;
+}
+
+header{
+    text-align:center;
+}
+#hero, footer{
+    border:2px solid #57C2FF;
+    background-color:#CCC7D6;
+    text-align:center;
+    padding:10px;
+}
+#hero img{
+    width:350px;
+}
+#bio{
+    text-align:center;
+}
