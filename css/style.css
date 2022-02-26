@@ -6,7 +6,9 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family:"Roboto Serif";
-    font-size:30pt;
+}
+h1{
+    font-size:40pt;
 }
 
 header{
@@ -23,4 +25,11 @@ header{
 }
 #bio{
     text-align:center;
+}
+#hobbies ul li{
+    padding:10px;
+    border:2px solid #57C2FF;
+}
+#hobbies ul{
+    width: 25%;
 }
