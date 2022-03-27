@@ -66,6 +66,7 @@ header{
     border:2px solid #57C2FF;
     text-align: center;
     margin-bottom:2rem;
+    padding-top: 10px;
 }
 
 #lit div{
@@ -118,7 +119,6 @@ header{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-
     hr{
         display: none;
     }
@@ -128,8 +128,33 @@ header{
     figure{
         display:block;
     }
-
 }
+/* Video */
+    #myVideo{
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        display:grid;
+        border: 4px outset #57C2FF;
+        width:100%;
+    }       
+    #video{
+        border:2px solid #57C2FF;
+        padding:10px;
+        margin-bottom:40px;    
+    }
+    h2{
+        text-align:center;
+    }
+    figcaption{
+        text-align:center;
+    }
+
+        
+
+    
+
+
 
 
 
