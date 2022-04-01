@@ -91,44 +91,6 @@ header{
     border-bottom-right-radius: 0.2em;
 
 }
-/* Tablet Size */
-    @media screen and (min-width:60em){
-    figure{
-        display:grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    figcaption{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2rem;
-        margin-left:1rem;
-    }
-    figure img{
-        width: 100%;
-    }
-    #lit div{
-        max-width: 100%;
-        columns: 20rem;
-    }
-}
-/* Large Screen Size */
-@media screen and (min-width: 100em){
-
-    #gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    hr{
-        display: none;
-    }
-    #gallery h2{
-        grid-column: 1/-1;
-    }
-    figure{
-        display:block;
-    }
-}
 /* Video */
     #myVideo{
         margin-left: auto;
@@ -151,10 +113,99 @@ header{
     }
 
     /* Contact Form */
-
     #formElements{
         display:grid;
+        row-gap:.5em
     }
+
+    #contact{
+        padding:1rem;
+        max-width:600px;
+        margin:2rem auto;
+    }
+
+    fieldset{
+        border:2px solid #57C2FF;
+        margin-top:1em;
+        margin-bottom:1em;
+        
+    }
+
+    legend{
+        background-color: #57C2FF;
+        color:black;
+        padding: .5em;
+        border:2px solid #4A160E;
+    }
+
+    #contact input, #contact textarea, #contact select, #contact button{
+        padding:.5em;
+        font-size:1rem;
+        border:2px solid #57C2FF;
+        box-shadow:5px 5px 5px #57C2FF;
+    }
+
+    #contact textarea{
+        border:2px solid #57C2FF;
+    }
+
+    #contact ul{
+        list-style:none;
+        padding:0px;
+    }
+
+    #contact li{
+        margin:1rem;
+    }
+
+    #contact button{
+        background-color: #57C2FF;
+        color:black;
+        font-weight: bold;
+        border:2px solid #4A160E;
+        max-width: 400px;
+        width: 70%;
+        justify-self: center;
+    }
+    /* Tablet Size */
+    @media screen and (min-width:60em){
+        figure{
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        figcaption{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-left:1rem;
+        }
+        figure img{
+            width: 100%;
+        }
+        #lit div{
+            max-width: 100%;
+            columns: 20rem;
+        }
+    }
+    /* Large Screen Size */
+    @media screen and (min-width: 100em){
+    
+        #gallery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        hr{
+            display: none;
+        }
+        #gallery h2{
+            grid-column: 1/-1;
+        }
+        figure{
+            display:block;
+        }
+    }
+
 
         
 
