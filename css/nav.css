@@ -25,6 +25,14 @@ main {
 
 /* navbar */
 
+.navbar {
+    background-color: #57C2FF;
+    color:#4A160E ;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 
 
 /* logo */
