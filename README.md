@@ -13,8 +13,7 @@ There is a nav-bar that can link to different parts of the page so anything you 
 I've connected all this to Netlify where the website is displayed.
 
 ## Color Schemes
-
-
+<img width="210" alt="Color1" src="https://user-images.githubusercontent.com/73936419/164521000-817b67fa-8215-4b56-8f11-912d5c8fa4f0.png"> <img width="208" alt="Color2" src="https://user-images.githubusercontent.com/73936419/164521012-ee203773-f1a5-4529-9e94-3e867e6f1db0.png">\
 
 
 ## Acknowledgements
