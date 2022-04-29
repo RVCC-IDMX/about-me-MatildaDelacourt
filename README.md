@@ -14,7 +14,9 @@
 #### Along with the photo gallery there is a profile picture of me a description of my hobbies and some information about me in my bio.
 #### I have added a hover effect to the photo gallery as well as a good transition for the images.
 #### The research topic i decided on was variable fonts, where in the blog area i give information about how it works and how it used to work, as well as some example screenshots of how to use the font-variation-settings with a four letter word and how to change the weight.
+#### For the last part i have added a hamburger menu to the top right menu visible in mobile and tablet mode with the shortcuts to parts of the site.
 #### I've connected all this to Netlify where the website is displayed.
+
 
 
 ## Color Schemes
