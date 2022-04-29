@@ -23,12 +23,12 @@
 
 ## Acknowledgements
 
-For picking out the fonts i have used [Fonts Google](https://fonts.google.com)
-For picking out the colors i have used [Adobe Color Wheel](https://color.adobe.com/create/color-wheel)
-For making my logo i have used [Adobe LogoMaker](https://express.adobe.com/express-apps/logomaker/)
-To generate a favicon i have used [Favicon-Generator](https://www.favicon-generator.org)
-To check the contrast and make sure the colors are accessible i have used [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en)
-Reseach Topic - Variable Fonts - Works Cited:
+#### For picking out the fonts i have used [Fonts Google](https://fonts.google.com)
+#### For picking out the colors i have used [Adobe Color Wheel](https://color.adobe.com/create/color-wheel)
+#### For making my logo i have used [Adobe LogoMaker](https://express.adobe.com/express-apps/logomaker/)
+#### To generate a favicon i have used [Favicon-Generator](https://www.favicon-generator.org)
+#### To check the contrast and make sure the colors are accessible i have used [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en)
+#### Reseach Topic - Variable Fonts - Works Cited:
 (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
 (https://web.dev/variable-fonts/)
 (https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts)
