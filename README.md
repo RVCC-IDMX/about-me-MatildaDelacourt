@@ -29,11 +29,11 @@
 #### To generate a favicon i have used [Favicon-Generator](https://www.favicon-generator.org)
 #### To check the contrast and make sure the colors are accessible i have used [ChromeLens](https://chrome.google.com/webstore/detail/chromelens/idikgljglpfilbhaboonnpnnincjhjkd?hl=en)
 #### Reseach Topic - Variable Fonts - Works Cited:
-(https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide)
-(https://web.dev/variable-fonts/)
-(https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts)
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Fonts/Variable_Fonts_Guide
+https://web.dev/variable-fonts/
+https://fonts.google.com/knowledge/introducing_type/introducing_variable_fonts
 #### For making the hamburger menu there is this video made by Angela Delise
-(https://www.youtube.com/watch?v=SIzi9z8mrTk)
+https://www.youtube.com/watch?v=SIzi9z8mrTk
 
 
 ## License
