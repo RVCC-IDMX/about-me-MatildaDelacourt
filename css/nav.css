@@ -1,30 +1,21 @@
 /* make scrolling smooth */
-
 html {
     scroll-behavior: smooth;
 }
-
 /* 
  get rid of padding & sizing on body so
  header is at top
 */
-
 body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-
 /* add some padding back to rest of page */
-
 main {
     padding: 2vw;
 }
-
-
 /* navbar */
-
 .navbar {
     background-color: #57C2FF;
     color:#4A160E ;
@@ -34,10 +25,38 @@ main {
     margin-bottom: 1rem;
     padding: 1rem;
 }
-
-
+/* when page loaded or when navbar is NOT clicked */
+.nav__checkbox{
+    display:none;
+}
+#nav__checkbox ~ label svg.close{
+    display: none;
+}
+#nav__checkbox ~ .navbar-links{
+    display: none;
+}
+/* when hamburger IS clicked */
+#nav__checkbox:checked ~ label.nav__toggle .close{
+    display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .menu{
+    display:none;
+}
+#nav__checkbox:checked ~ .navbar-links{
+    display: block;
+    cursor: pointer;
+}
+svg{
+    padding:10px;
+    width:2.0rem;
+    position:fixed;
+    top: 0;
+    right:0;
+}
+#nav__checkbox{
+    float:right;
+}
 /* logo */
-
 .logo {
     display:flex;
     align-items: center;
@@ -53,7 +72,6 @@ main {
 }
 
 /* navigation list */
-
 .navbar-links li {
     list-style: none;
     display: block;
@@ -64,7 +82,6 @@ main {
  style all a tags in header 
  and then on hover
 */
-
 .navbar-links a {
     color: #4A160E;
     background-color:#57C2FF;
@@ -87,15 +104,19 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
-
 @media screen and (min-width: 60rem){
     .navbar {
         flex-direction: row;
         justify-content: space-between;
     }
-
     .navbar ul {
         display:flex;
         justify-content: space-between;
+    }
+    #nav__checkbox, #mobileNav label{
+        display:none;
+    }
+    #nav__checkbox ~ .navbar-links{
+        display: inline-block;
     }
 }
