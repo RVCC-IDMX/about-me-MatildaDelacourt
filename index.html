@@ -8,9 +8,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&family=Roboto+Serif:wght@500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 <link href="css/nav.css" rel="stylesheet">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
     
 </head>
 <body>
@@ -21,9 +25,19 @@
     <!--the header shows logo and page title-->
         <nav class="navbar">
             <div class="logo">
-                <img src="images/logo-96X96.svg" alt="Blue origami logo"> 
+                <img src="images/MD-red.png" alt="A logo with the initials MD"> 
                 <h1>Web Dev I</h1>
             </div>
+            <section id="mobileNav">
+            <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+                <label for="nav__checkbox" class="nav__toggle">
+                    <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+                        <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+                    </svg>
+                    <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+                        <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                    </svg>
+                </label>
             <div class="navbar-links">
                 <ul>
                     <li><a href="#bio">Bio</a></li>
@@ -32,6 +46,7 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
+        </section>
         </nav>
     </header>
 
@@ -41,11 +56,11 @@
 
         <section id="hero">
     <!--hero section: shows profile image, name & locatipon-->
-            <img src="images/avataaars.png" alt="Avatar picture of me">
+            <img src="images/ME.JPG" alt="Picture of me">
 
             <div>
-                <p>Matilda Delacourt</p>
-                <p>North Plainfield, NJ</p>
+                <p class="name">Matilda Delacourt</p>
+                <p class="state">North Plainfield, NJ</p>
             </div>
     <!--close hero section-->        
     </section>
@@ -54,9 +69,20 @@
     <!--bio section! personal info(not too personal)-->
     <h2>Biography:</h2>
     <div>
-        <p>I want to be...</p>
+        <p class="p-style">About me:</p>
 
-        <p>A programmer</p>
+        <p>I am from Paraguay, all my life I have worked with computers and just pretty much have always been interested in Programming and Computer Science. 
+            I grew up with a family that already had a computer business called Cyber Home which was a computer/Internet cafe where people would come to use the computers or get help with anything technology related. 
+            Since I was 8 years old I always wanted to be part of it and always helped out with the business, taught people how to use a computer, how to use a computer safely, inserting your information and keeping it secure. 
+            I came to the United States to accomplish my dream and better myself everyday in the technology field and also as a person and in life. 
+            This is something I have wanted since i have recollection and I have fought every day to accomplish this dream no matter the obstacles.
+        
+        <p class="p-style">In my free time:</p>
+
+        <p>I usually play the drums and try to learn new beats, dance moves or I am singing a song I like. 
+            These things really help me express myself in different ways and even helps me to be more patient with myself and keep practicing which keeps me consistent.
+            When I am not doing one of those things I usually go out and kayak to get some fresh air and get some exercise going.
+            Web development is something I really enjoy and have fun doing and is one of my favorite things to do and just want to keep growing every day.</p>
     </div>
     </section>
     <section id="hobbies">
@@ -103,19 +129,29 @@
     </section>
 
     <article id="lit">
-    <h2>Dracula</h2>
+    <h2>Variable Fonts</h2>
     <div>
-        <p>I could not tell the others of the day's discovery till we were alone; so after dinner--followed by a little music to save appearances even amongst ourselves--I took Mina to her room and left her to go to bed. The dear girl was more affectionate with me than ever, and clung to me as though she would detain me; but there was much to be talked of and I came away. Thank God, the ceasing of telling things has made no difference between us.</p>
+        <p>Variable fonts enables many different variations of a typeface to be incorporated into a single file instead of having a separate font file for every width, weight or style. You can access all the variations contained in a given font file through CSS and a single @font-face reference.</p>
+        <p class="bold">Standard or Static Fonts</p>
+        <p>In the past if you haven’t used variable fonts you would have separate files for each individual fonts and what that font would represent like a specific width/weight/style combination. There would be a separate file for the font you were using like the name of the font such as: “Roboto Regular”, “Roboto Bold” and “Roboto Bold Italic”. This means that you would end up with 20 or 30 different font files to represent a complete typeface or even more.</p>
 
-        <p>When I came down again I found the others all gathered round the fire in the study. In the train I had written my diary so far, and simply read it off to them as the best means of letting them get abreast of my own information; when I had finished Van Helsing said:--</p>
+        <p>With Variable fonts all styles can be contained in a single file and you can use CSS to access all the styles contained in a single font file without any worries about browser distortions. This is way more convenient than having a cluster of files just for you fonts. The advantage of choosing the variable font is that you have access to the entire range of weight, widths and styles which helps to design your site better, like changing the headings in different weights for readability or using a slightly narrower width for data-dense displays.</p>
+        <p class="bold">Variation Axis</p>
+        <p>Axis of variation describes the allowable range of the particular aspect of the typeface design. The weight axis describes how light or how bold the letterforms can be; The width axis describes how narrow or how wide they can be; the italic axis describes if italic letterforms are present and can be turned on or off accordingly.
+        An axis can be a range or a binary choice. Weight can range to 1-999 and Italic might be 0 or 1 (off or on).</p>
+    <section id="vFont1">
+        <image src="images/RobotoItalic-900.png" alt= "Variable font."></image>
+        <image src="images/code1.png" alt= "Variable font code."></image>
+    </section>
+        <p>As defined in the specification, there are two kind of axes: registered and custom:</p>
 
-        <p>This has been a great day's work, friend Jonathan. Doubtless we are on the track of the missing boxes. If we find them all in that house, then our work is near the end. But if there be some missing, we must search until we find them. Then shall we make our final coup, and hunt the wretch to his real death." We all sat silent awhile and all at once Mr. Morris spoke:--</p>
+        <p>Registered axes are those that are most frequently encountered and common enough that the authors of the specification felt it was worth standardizing. The five currently registered axes are weight, width, slant, italic and optical size.</p> 
 
-        <p>But, Art, this is different. We broke house at Carfax, but we had night and a walled park to protect us. It will be a mighty different thing to commit burglary in Piccadilly, either by day or night. I confess I don't see how we are going to get in unless that agency duck can find us a key of some sort; perhaps we shall know when you get his letter in the morning." Lord Godalming's brows contracted, and he stood up and walked about the room. By-and-by he stopped and said, turning from one to another of us:--</p>
-
-        <p>Quincey's head is level. This burglary business is getting serious; we got off once all right; but we have now a rare job on hand--unless we can find the Count's key basket."</p>
-
-        <p>As nothing could well be done before morning, and as it would be at least advisable to wait till Lord Godalming should hear from Mitchell's, we decided not to take any active step before breakfast time. For a good while we sat and smoked, discussing the matter in its various lights and bearings; I took the opportunity of bringing this diary right up to the moment. I am very sleepy and shall go to bed....</p>
+        <p>Custom axes are limitless: the typeface designer can define and scope any axis they like and are just required to give it a four-letter tag to identify it within the font file for format itself. You can use these four-letter tags in CSS to specify a point along that axis of variation.</p>
+    <section id="vFont2">
+        <image src="images/RobotoMono-100.png" alt= "Variable font."></image>
+        <image src="images/code2.png" alt= "Variable font code."></image>
+    </section>
     </article>
     </div>
 
@@ -184,7 +220,7 @@
     </main>
 
     <footer>
-        ©2022 - Matilda Delacourt
+        ©2022 - Matilda Delacourt - https://github.com/MatildaDelacourt
     </footer>
 
 </body>

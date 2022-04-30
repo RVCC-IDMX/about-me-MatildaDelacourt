@@ -1,25 +1,23 @@
+/* Fonts and Colors */
 body {
     font-family:DM SANS;
     background-color:#EDE8F9;
     color: #4A160E;
-
 }
 h1,h2,h3,h4,h5,h6 {
-    font-family:"Roboto Serif";
+    font-family:"Roboto Mono";
 }
-
 h1{
+    padding: 10px;
     font-size:40pt;
 }
-
 h2{
     margin:1em;
 }
-
-
 header{
     text-align:center;
 }
+
 /* Hero Section */
 #hero, footer{
     border:2px solid #57C2FF;
@@ -28,12 +26,32 @@ header{
     padding:10px;
 }
 #hero img{
-    width:350px;
+    width:300px;  
+    border-radius:25px; 
 }
+.name, .state{
+    text-align: center;
+}
+
 /* Bio Section */
 #bio{
-    text-align:center;
+    text-align:center;    
 }
+
+.p-style{
+    text-align: left;
+    border:2px solid #57C2FF;
+    padding: 5px;
+    display: table;
+    font-size: large;
+}
+p{
+    text-align: left;
+    padding: 5px;
+    font-size: medium;
+}
+
+
 /* Hobbies Section */
 #hobbies{
     display: flex; 
@@ -54,9 +72,21 @@ header{
     text-align:center;
     border:2px solid #57C2FF;
     margin-bottom: 2rem;
+    
+}
+figure{
+    overflow:hidden;
 }
 #gallery img{
-    max-width:100%
+    max-width:100%;
+    transform: rotate3d(1, 1, 1, 0);
+    transition: all .5s ease-in-out;
+}
+#gallery img:hover{
+    opacity: 0.5;
+    transform: rotate3d(1, 1, 1, 15deg);
+    overflow:hidden;
+    transition: all .5s ease-in-out;
 }
 #gallery figure{
     text-align:center;
@@ -67,6 +97,10 @@ header{
     text-align: center;
     margin-bottom:2rem;
     padding-top: 10px;
+}
+
+.bold{
+    font-weight: 900;
 }
 
 #lit div{
@@ -91,8 +125,30 @@ header{
     border-bottom-right-radius: 0.2em;
 
 }
+/* Examples for Research Topic */
+#vFont1{
+        width: 100%;
+        max-width:100%;
+        padding:5px;
+        display:flex;
+    }
+#vFont1 img{
+        width:50%;
+        padding:5px;
+    }
+#vFont2{
+        width: 100%;
+        max-width:100%;
+        padding:5px;
+        display:flex;
+    }
+#vFont2 img{
+        width:50%;
+        padding:5px;
+    }
+
 /* Video */
-    #myVideo{
+#myVideo{
         margin-left: auto;
         margin-right: auto;
         position:relative;
@@ -100,65 +156,65 @@ header{
         border: 4px outset #57C2FF;
         width:100%;
     }       
-    #video{
+#video{
         border:2px solid #57C2FF;
         padding:10px;
         margin-bottom:40px;    
     }
-    h2{
+h2{
         text-align:center;
     }
     figcaption{
         text-align:center;
     }
 
-    /* Contact Form */
-    #formElements{
+/* Contact Form */
+#formElements{
         display:grid;
         row-gap:.5em
     }
 
-    #contact{
+#contact{
         padding:1rem;
         max-width:600px;
         margin:2rem auto;
     }
 
-    fieldset{
+fieldset{
         border:2px solid #57C2FF;
         margin-top:1em;
         margin-bottom:1em;
         
     }
 
-    legend{
+legend{
         background-color: #57C2FF;
         color:black;
         padding: .5em;
         border:2px solid #4A160E;
     }
 
-    #contact input, #contact textarea, #contact select, #contact button{
+#contact input, #contact textarea, #contact select, #contact button{
         padding:.5em;
         font-size:1rem;
         border:2px solid #57C2FF;
         box-shadow:5px 5px 5px #57C2FF;
     }
 
-    #contact textarea{
+#contact textarea{
         border:2px solid #57C2FF;
     }
 
-    #contact ul{
+#contact ul{
         list-style:none;
         padding:0px;
     }
 
-    #contact li{
+#contact li{
         margin:1rem;
     }
 
-    #contact button{
+#contact button{
         background-color: #57C2FF;
         color:black;
         font-weight: bold;
@@ -167,7 +223,7 @@ header{
         width: 70%;
         justify-self: center;
     }
-    /* Tablet Size */
+/* Tablet Size */
     @media screen and (min-width:60em){
         figure{
             display:grid;
@@ -187,8 +243,11 @@ header{
             max-width: 100%;
             columns: 20rem;
         }
+        #vFont1, #vFont2{
+            display:inline-block;
+        }
     }
-    /* Large Screen Size */
+/* Large Screen Size */
     @media screen and (min-width: 100em){
     
         #gallery{
