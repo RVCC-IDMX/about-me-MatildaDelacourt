@@ -88,6 +88,12 @@ figure{
     overflow:hidden;
     transition: all .5s ease-in-out;
 }
+#gallery img.invert:hover{
+    opacity: 0.5;
+    transform: rotate3d(1, 1, 1, -15deg);
+    overflow:hidden;
+    transition: all .5s ease-in-out;
+}
 #gallery figure{
     text-align:center;
 }
